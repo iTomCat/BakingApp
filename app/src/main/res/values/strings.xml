@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">BakingApp</string>
+    <string name="image">Image</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="next_step">Next Step</string>
+    <string name="prew_step">Previous Step</string>
+    <string name="intro">In</string>
+    <string name="ingriedents_title">Ingriedents for</string>
+    <string name="reciepe_for">Recipe for</string>
+    <string name="no_video">no video or thumbnail</string>
+
+    <!-- Widget -->
+    <string name="appwidget_text">Baking App</string>
+    <string name="add_widget">Add widget</string>
+    <string name="choose_recipe">Choose a recipe</string>
+    <string name="recipe_was_added">The recipe has been put into the widget</string>
+
+
+    <!-- Error messages -->
+    <string name="detail_error_message">Reciepe data not available</string>
+
+    <!-- Ingriedents -->
+    <plurals name="measure_cup">
+        <item quantity="zero">cup</item>
+        <item quantity="one">cup</item>
+        <item quantity="other">cups</item>
+    </plurals>
+    <plurals name="measure_teaspoon">
+        <item quantity="one">teaspoon</item>
+        <item quantity="other">teaspoons</item>
+    </plurals>
+    <plurals name="measure_gram">
+        <item quantity="one">g</item>
+        <item quantity="other">g</item>
+    </plurals>
+    <plurals name="measure_tablespoon">
+        <item quantity="one">tablespoon</item>
+        <item quantity="other">tablespoons</item>
+    </plurals>
+    <plurals name="measure_kilogram">
+        <item quantity="one">kg</item>
+        <item quantity="other">kg</item>
+    </plurals>
+    <plurals name="measure_oz">
+        <item quantity="one">g</item>
+        <item quantity="other">g</item>
+    </plurals>
+    <plurals name="measure_unit">
+        <item quantity="one">piece</item>
+        <item quantity="other">pieces</item>
+    </plurals>
+    <plurals name="measure_empty">
+        <item quantity="one"> </item>
+        <item quantity="other"> </item>
+    </plurals>
+    <plurals name="servings">
+        <item quantity="one">serving</item>
+        <item quantity="other">servings</item>
+    </plurals>
+
+</resources>
