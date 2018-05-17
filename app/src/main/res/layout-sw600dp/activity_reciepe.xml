@@ -11,15 +11,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.40" />
 
-    <include
-        android:id="@+id/my_exo_player_control"
-        android:visibility="gone"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/my_exo_playback_control_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/playerView"/>
 
     <FrameLayout
         android:id="@+id/video_container"

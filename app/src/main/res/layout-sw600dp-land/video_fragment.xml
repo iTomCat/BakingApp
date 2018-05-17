@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:id="@+id/step_layout">
 
     <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:visibility="gone"
         android:id="@+id/playerView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -16,15 +18,19 @@
 
     </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
 
-    <include
-        android:id="@+id/my_exo_player_control"
-        android:visibility="gone"
+    <ImageView
+        android:id="@+id/step_thumbnail_view"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        layout="@layout/my_exo_playback_control_view"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image"
+        android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_gravity="top"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/playerView"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_prev_step"
@@ -62,6 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/playerView" />
 
     <ScrollView
+        android:id="@+id/scroll_step"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -76,10 +83,9 @@
         <TextView
             android:id="@+id/recipe_desc"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:text="TextView"
             android:textAlignment="center"
             android:textSize="17sp" />
 
